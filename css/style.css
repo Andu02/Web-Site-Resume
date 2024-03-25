@@ -1,0 +1,56 @@
+.gradient-background {
+  background: linear-gradient(300deg, #070F2B, #1B1A55, #535C91);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+#footer {
+    background-color: #1B1A55;
+}
+
+#header-title {
+    padding-bottom: 40px;
+}
+
+.nav-link {
+    color: white;
+}
+
+#about-me li {
+    padding-bottom: 5px;
+}
+
+.project-image {
+  height: 330px;
+  border-top-left-radius: 1%; 
+  border-top-right-radius: 1%;
+}
+
+.corner-text-projects {
+  height: "30px";
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
