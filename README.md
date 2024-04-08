@@ -4,6 +4,7 @@ with instructions from the Udemy's Course "The Complete 2024 Web Development Boo
 # Link
 Access to the website is available at the following address, utilizing the GitHub Pages feature: https://andu02.github.io/Web-Site-Resume
 
+# Others
 IDE Used: **Visual Studio Code**
 <br>
 Framework Used: **Bootstrap**
