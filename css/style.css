@@ -58,3 +58,11 @@ body {
 .card-text {
   font-weight: 500;
 }
+
+.accordion-body {
+  padding-bottom: 0; 
+  margin-bottom: 0;  
+}
+.accordion-item:last-child .accordion-body {
+  margin-bottom: 0; 
+}

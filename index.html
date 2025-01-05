@@ -37,7 +37,7 @@
           </div>
           <div class="overflow-hidden" style="max-height: 30vh;">
             <div class="container">
-              <img class="profile-picture" src="./assets/images/profile-picture.png" width="200" height="200" loading="lazy">
+              <img class="profile-picture" src="./assets/images/profile-picture.jpg" width="200" height="200" loading="lazy">
             </div>
           </div>
         </div>
@@ -45,55 +45,223 @@
 
   <!-- About me -->
   <section id="about-me" class="text-center">
-      <div class="container px-4 pt-5" id="featured-3">
-          <h2 class="pb-2 border-bottom">About me</h2>
-          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="container px-4 pt-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">About me</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <!-- Education -->
             <div class="feature col">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                  <img src="./assets/icons/hat.svg" height="40px">
-              </div>
-              <h3 class="fs-2">Education</h3>
-              <p class="border">
-                  <ul class="list-unstyled">
-                      <li>Student in year 3 at POLITEHNICA of Bucharest</li>   
-                      <li>Octomber 2022 - still attending</li>     
-                      <li>Faculty of Applied Sciences</li>
-                      <li>Specialization: Mathematics and Computer Science Applied in Engineering</li>
-                  </ul>
-              </p>
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="./assets/icons/hat.svg" height="40px">
+                </div>
+                <h3 class="fs-2">Education</h3>
+                <div class="accordion border" id="educationAccordion">
+                  <!-- Education 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="educationOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducationOne" aria-expanded="false" aria-controls="collapseEducationOne">
+                                National College "Grigore Moisil"
+                            </button>
+                        </h2>
+                        <div id="collapseEducationOne" class="accordion-collapse collapse" aria-labelledby="educationOne">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><b>September 2017 - June 2021</b></li>     
+                                    <li>Mathematics and Computer Science</li>
+                                    <li>Courses with C++ and SQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  <!-- Education 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="educationTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducationTwo" aria-expanded="false" aria-controls="collapseEducationTwo">
+                              University "Politehnica" of Bucharest
+                          </button>
+                      </h2>
+                      <div id="collapseEducationTwo" class="accordion-collapse collapse" aria-labelledby="educationOne">
+                          <div class="accordion-body">
+                              <ul class="list-unstyled">
+                                  <li><b>October 2022 - still attending</b></li> 
+                                  <li>Student in year 4 at POLITEHNICA of Bucharest</li>      
+                                  <li>Faculty of Applied Sciences</li>
+                                  <li>Specialization: Mathematics and Computer Science Applied in Engineering</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
             </div>
+
+            <!-- Work Experience -->
             <div class="feature col">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="./assets/icons/briefcase.svg" height="40px">
-              </div>
-              <h3 class="fs-2">Work Experience</h3>
-              <p class="border">
-                  <ul class="list-unstyled">
-                      <li>Game Tester at Electronic Arts</li>        
-                      <li>June 2022 - July 2023</li>
-                      <li>Job Title: QV Tester I</li>
-                      <li>Worked in projects like Apex Legends, Fifa, Battlefield 2042</li>
-                  </ul>
-              </p>
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="./assets/icons/briefcase.svg" height="40px">
+                </div>
+                <h3 class="fs-2">Work Experience</h3>
+                <div class="accordion border" id="workExperienceAccordion">
+                  <!-- Job 1 -->
+                  <div class="accordion-item">
+                        <h2 class="accordion-header" id="jobOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" tabindex="-1">
+                            QV Tester I at Electronic Arts
+                          </button>
+                        </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="jobOne" data-bs-parent="#workExperienceAccordion">
+                          <div class="accordion-body">
+                              <ul class="list-unstyled">
+                                  <li><b>June 2022 - July 2023</b></li>
+                                  <li>Tested and evaluated video games at various stages of development.</li>
+                                  <li>Used Confluence, Jira, TestRail, Xbox GDK, and Neighborhood for PlayStation.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Job 2 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="jobTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Cybersecurity Analyst Tier I at Smarttech    
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="jobTwo" data-bs-parent="#workExperienceAccordion">
+                          <div class="accordion-body">
+                              <ul class="list-unstyled">
+                                  <li><b>July 2024 - August 2024</b></li>
+                                  <li>Tracked security incidents, checked for vulnerabilities, and handled threats to protect digital assets and infrastructure.                                  </li>
+                                  <li>Used QRadar Console.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Job 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="jobThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Tester I at Testronic
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="jobThree" data-bs-parent="#workExperienceAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li><b>July 2024 - September 2024</b></li>
+                                <li>Tested and evaluated video games at various stages of development.</li>
+                                <li>Used Jira, TestRail and Xbox GDK.</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+
+            <!-- Skills -->
             <div class="feature col">
               <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                   <img src="./assets/icons/braces.svg" height="40px">
               </div>
-              <h3 class="fs-2">Skills</h3>
-              <p class="border">
-                  <ul class="list-unstyled">
-                      <li>Team Player ★★★★★</li>        
-                      <li>Java ★★★★★</li>
-                      <li>C++ ★★★★✰</li>
-                      <li>HTML, CSS, JS ★★★✰✰</li>
-                      <li>Python ★★✰✰✰</li>
-                  </ul>
-              </p>
-            </div>
+              <h3 class="fs-2">Technical Skills</h3>
+              <div class="accordion border" id="skillsAccordion">
+                  <!-- Skill 1 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="skillOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillOne" aria-expanded="false" aria-controls="collapseSkillOne">
+                              Programming Languages
+                          </button>
+                      </h2>
+                      <div id="collapseSkillOne" class="accordion-collapse collapse" aria-labelledby="skillOne">
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li>Java</li>
+                              <li>JavaScript</li>
+                              <li>SQL</li>
+                              <li>Python</li>
+                              <li>C#</li>
+                           </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Skill 2 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="skillTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillTwo" aria-expanded="false" aria-controls="collapseSkillTwo">
+                              Backend Development
+                          </button>
+                      </h2>
+                      <div id="collapseSkillTwo" class="accordion-collapse collapse" aria-labelledby="skillTwo">
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li>Node.js</li>
+                              <li>Express.js</li>
+                              <li>Spring</li>
+                          </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Skill 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="skillThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillThree" aria-expanded="false" aria-controls="collapseSkillThree">
+                              Frontend Development
+                          </button>
+                      </h2>
+                      <div id="collapseSkillThree" class="accordion-collapse collapse" aria-labelledby="skillThree">
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li>React</li>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>Bootstrap</li>
+                          </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Skill 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="skillFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillFour" aria-expanded="false" aria-controls="collapseSkillFour">
+                            Databases 
+                        </button>
+                    </h2>
+                    <div id="collapseSkillFour" class="accordion-collapse collapse" aria-labelledby="skillFour">
+                        <div class="accordion-body">
+                          <ul class="list-unstyled">
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                        </ul>
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <!-- Skill 5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="skillFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillFive" aria-expanded="false" aria-controls="collapseSkillFive">
+                            Developer Tools
+                        </button>
+                    </h2>
+                    <div id="collapseSkillFive" class="accordion-collapse collapse" aria-labelledby="skillFive">
+                        <div class="accordion-body">
+                          <ul class="list-unstyled">
+                            <li>GitHub</li>
+                            <li>Postman</li>
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>PyCharm</li>
+                            <li>Jira</li>
+                            <li>CodeBlocks</li>
+                            <li>TestRail</li>
+                        </ul>
+                        </div>
+                    </div>
+                  </div>
+              </div>
           </div>
-        </div>
+          
+      </div>
+  </div>
   </section>
+
 
   <!-- Projects -->
   <section id="projects">
@@ -101,9 +269,10 @@
     <div class="container">
       <h2 class="pb-2 border-bottom text-center">Personal Projects</h2>
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3 pt-5">
+        <!-- Project 1 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/images/2d-rpg-java-project.png" class="project-image img-fluid" loading="lazy">
+            <img src="./assets/images/2d-rpg-java-project.png" class="img-fluid" loading="lazy">
             <div class="card-body">
               <p class="card-text text text-center">RPG 2D Game Project - "Undo's World"</p>
               
@@ -116,25 +285,57 @@
             </div>
           </div>
         </div>
+        <!-- Project 2 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/images/tictactoe-project.png" class="project-image img-fluid" loading="lazy">
+            <img src="./assets/images/movie-library-web-app.png" class="img-fluid" loading="lazy">
             <div class="card-body">
-              <p class="card-text text-center">Simple TicTacToe Game Project</p>
+              <p class="card-text text-center">Movie Library Web App - "Fake Imdb"</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://github.com/Andu02/Simple_TicTacToe_Project"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  <a href="https://github.com/Andu02/Movie-Library-Web-App"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
                 </div>
                 <small class="text-body-secondary">on my GitHub <img src="./assets/icons/filetype-java.svg" class="corner-text-projects"></small>
               </div>
             </div>
           </div>
         </div>
+        <!-- Project 3 -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/images/hackathon-game.png" class="project-image" loading="lazy">
+            <img src="./assets/images/blog-web-app.png" class="img-fluid" loading="lazy">
             <div class="card-body">
-              <p class="card-text text-center">2D Game Project - At hackathon "<a href="https://bestbucuresti.ro/bestem)" >BESTEM23</a>"</p>
+              <p class="card-text text-center">Blog Web Application</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/Andu02/Blog-web-application"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                </div>
+                <small class="text-body-secondary">on my GitHub <img src="./assets/icons/unity.svg" class="corner-text-projects"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/images/random-global-disasters-web-app.png" class="img-fluid" loading="lazy">
+            <div class="card-body">
+              <p class="card-text text-center">Random Global Disaster Web App</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/Andu02/Random-Global-Disasters-Web-App"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                </div>
+                <small class="text-body-secondary">on my GitHub <img src="./assets/icons/unity.svg" class="corner-text-projects"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./assets/images/hackathon-game.png" class="img-fluid" loading="lazy">
+            <div class="card-body">
+              <p class="card-text text-center">Unity 3D Game for Hackathon "BESTEM23"</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="https://github.com/Andu02/Hackathon-BESTEM23-Ubisoft"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
