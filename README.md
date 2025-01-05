@@ -8,3 +8,7 @@ Access to the website is available at the following address, utilizing the GitHu
 IDE Used: **Visual Studio Code**
 <br>
 Framework Used: **Bootstrap**
+
+# Preview
+
+![resume_web_site](https://github.com/user-attachments/assets/f27571f5-50f7-41b8-a2fb-2c6f7c30e91b)
